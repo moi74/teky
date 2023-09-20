@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="108" height="209" viewBox="0 0 108 209" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.514" y1="1" x2="0.517" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8e8e8" stop-opacity="0.976"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.976"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8e8e8"/>
+      <stop offset="1" stop-color="#777"/>
+    </linearGradient>
+  </defs>
+  <g id="Retângulo_896" data-name="Retângulo 896" stroke="#adb2b4" stroke-width="1" fill="url(#linear-gradient)" transform="matrix(-1, 0, 0, 1, 108, 0)">
+    <rect width="108" height="209" rx="6" stroke="none"/>
+    <rect x="0.5" y="0.5" width="107" height="208" rx="5.5" fill="none"/>
+  </g>
+  <path id="path" d="M 33.512 135.323 L 42.589 144.4 L 81.489 105.5 L 42.589 66.6 L 33.512 75.676 L 63.335 105.5 L 33.512 135.323 Z" stroke="#000" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+</svg>
