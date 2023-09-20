@@ -1,3 +1,19 @@
+.cadastro {
+    background-color: rgb( 0, 108, 185);
+    padding: 1%;
+}
+
+p.cadastro {
+    font-size: large;
+}
+
+input {
+    margin-left: 0.5%;
+    height: 30px;
+    width: 15%;
+    border-radius: 5px;
+}
+
 .superior {
     display: flex;
     align-items: center, flex-start;

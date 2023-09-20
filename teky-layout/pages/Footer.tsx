@@ -4,6 +4,16 @@ import '../style/Footer.css';
 function Footer() {
     return (
         <div className='Footer'>
+                <div className='cadastro'>
+                <center>
+                    <p className='cadastro'><b>Cadastre-se e receba ofertas exclusivas</b></p>
+                    <form className='dados_cadastro'>
+                        <input type='text' placeholder='Digite seu nome'></input>
+                        <input type='text' placeholder='Digite seu email'></input>
+                        <button type='submit'> Enviar </button>
+                    </form>
+                </center>
+            </div>
             <div className='superior'>
                 <a href='#'><img src='./logo_principal.svg' className='img_logo'></img></a>
                 <div className='div_content'>
