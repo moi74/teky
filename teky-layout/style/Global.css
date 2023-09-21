@@ -8,3 +8,6 @@ html, body{
     font-size: small;
 }
 
+a {
+    text-decoration: none;
+}

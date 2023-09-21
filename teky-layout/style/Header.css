@@ -1,4 +1,4 @@
-.header {
+.navbar__header {
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -8,17 +8,34 @@
     color: white;
 }
 
-.direita {
+.header__lista {
+    display: flex;
+    list-style-type: none;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.header__lista--categorias {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar__header__esquerda {
     width: 20%;
 }
 
-.centro {
+.navbar__header__centro {
     display: flex;
     width: 50%;
     align-items: center;
+    text-align: left;
 }
 
-.esquerda {
+
+.navbar__header__direita {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,8 +45,12 @@
     height: 40px;
 }
 
-a {
+.navbar__link {
     color: white;
+}
+
+.navbar__link:hover {
+    text-decoration: underline;
 }
 
 .busca {
@@ -66,14 +87,14 @@ a {
     align-items: center;
 }
 
-.categoria {
-    display: flex;
+.header__categorias {
+    padding: 1%;
     list-style-type: none;
     justify-items: center;
     align-items: center;
 }
 
-li {
+.header__categorias__item {
     padding: 1%;
 }
 

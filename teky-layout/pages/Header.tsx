@@ -1,16 +1,17 @@
 import '../style/Header.css';
+import '../style/Global.css'
 
 function Header() {
     return (
         <div className='navbar'>
-            <div className="header">
-                <div className='direita'>
+            <div className="navbar__header">
+                <div className='navbar__header__esquerda'>
                     <a href='#'><img src='./Menu.svg'></img></a>
                     <a href="#default">
                         <img src='./tekyWhite.svg' className='logo'></img>
                     </a>
                 </div>
-                <div className='centro'>
+                <div className='navbar__header__centro'>
                     <div className='busca'>
                         <form>
                             <select className='categoriaSelect'></select>
@@ -18,61 +19,59 @@ function Header() {
                             <button type='submit' className='buttonBusca'>S</button>
                         </form>
                     </div>
-                    <div className='login'>
+                    <div className='navbar__login'>
                         <p>Olá <br />
-                        <a href='/' className='headerLink'>Faça seu login</a>
+                        <a href='/' className='navbar__link'>Faça seu login</a><br />
                         </p>
                     </div>
                 </div>
-                <div className="esquerda">
-                    <a className="linkheader" href="#home">Quem somos</a>
-                    <p> | </p>
-                    <a className="linkheader" href="#contact">Teky Pro</a>
-                    <p> | </p>
-                    <a className="linkheader" href="#about">Venda na Teky</a>
-                    <p> | </p>
-                        <a className="linkheader" href='#'>Pedidos</a>
-                        <a><img src='./carrinho.png' className='carrinho'></img></a>
-
+                <div className="navbar__header__direita">
+                    <ul className='header__lista'>
+                        <li><a className="navbar__link" href="#home">Quem somos</a></li><span> | </span>
+                        <li><a className="navbar__link" href="#contact">Teky Pro</a></li><span> | </span>
+                        <li><a className="navbar__link" href="#about">Venda na Teky</a></li><span> | </span>
+                        <li><a className="navbar__link" href='#'>Pedidos</a></li>
+                        <li><a><img src='./carrinho.png' className='carrinho'></img></a></li>
+                    </ul>
                 </div>
             </div>
-            <div className='categorias'>
-                <ul className='categoria'>
+            <div className='header__categorias'>
+                <ul className='header__lista--categorias'>
                     <li>
-                        <a className='categoriaHeader' href='#'>Abrasivos</a>
+                        <a className='header__categorias__item' href='#'>Abrasivos</a>
                     </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Correias e Mangueiras</a>
+                        <a className='header__categorias__item' href='#'>Correias e Mangueiras</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Corte e Usinagem</a>
+                        <a className='header__categorias__item' href='#'>Corte e Usinagem</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Elétrica e Telecom</a>
+                        <a className='header__categorias__item' href='#'>Elétrica e Telecom</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>EPIs e EPCs</a>
+                        <a className='header__categorias__item' href='#'>EPIs e EPCs</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Ferramentas</a>
+                        <a className='header__categorias__item' href='#'>Ferramentas</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Ficação e Vedação</a>
+                        <a className='header__categorias__item' href='#'>Ficação e Vedação</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Hidráulicos e Pneumáticos</a>
+                        <a className='header__categorias__item' href='#'>Hidráulicos e Pneumáticos</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Motores e Bombas</a>
+                        <a className='header__categorias__item' href='#'>Motores e Bombas</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Óleos, Fluídos e Solventes</a>
+                        <a className='header__categorias__item' href='#'>Óleos, Fluídos e Solventes</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Outros</a>
+                        <a className='header__categorias__item' href='#'>Outros</a>
                         </li>
                     <li>
-                        <a className='categoriaHeader' href='#'>Rolamentos</a>
+                        <a className='header__categorias__item' href='#'>Rolamentos</a>
                     </li>
                 </ul>
             </div>

@@ -1,10 +1,21 @@
-.cadastro {
+.footer__cadastro {
     background-color: rgb( 0, 108, 185);
     padding: 1%;
 }
 
 p.cadastro {
     font-size: large;
+}
+
+.footer__cadastro__button {
+    margin-left: 1%;
+    background-color: rgb(220, 211, 211);
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.footer__cadastro__button:hover {
+    background-color: rgb(198, 193, 193);
 }
 
 input {
@@ -14,7 +25,7 @@ input {
     border-radius: 5px;
 }
 
-.superior {
+.footer__superior {
     display: flex;
     align-items: center, flex-start;
     justify-content: center;
@@ -35,23 +46,22 @@ input {
     height: auto;
 }
 
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
+.footer__link {
     color: black;
 }
 
-a:hover {
+.footer__link:hover {
     color: rgb(0, 108, 185);
 }
 
-.inferior {
+.footer__inferior {
     min-height: auto;
     align-items: center;
     padding: 1%;
     background: rgb(0, 108, 185);
 }
 
-p {
+.footer__texto {
     text-align: center;
     color: white;
 }
