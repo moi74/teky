@@ -1,25 +1,49 @@
 .header {
     height: 50px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     background: rgb(0, 108, 185);
     color: white;
 }
 
+.direita {
+    width: 20%;
+}
+
+.centro {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo{
     height: 40px;
 }
 
+a {
+    color: white;
+}
+
 .busca {
-    display: flex;
     align-items: center;
     margin-left: 7%;
     background-color:#ffffff;
     border:solid 1px;
     border-radius:5px;
     height: 30px;
-    width:300px;
+    width: 550px;
+}
+
+.buttonBusca {
+    height: 100%;
 }
 
 .categoriaSelect {
@@ -30,8 +54,30 @@
 
 .pesquisa {
     border: 0;
-    height: 25px;
-    width: 250px;
+    height: 100%;
+    width: 90%;
     box-shadow: 0 0 0 0;
     outline: 0;
+}
+
+.header-direita {
+    display: flex;
+    justify-items: right;
+    align-items: center;
+}
+
+.categoria {
+    display: flex;
+    list-style-type: none;
+    justify-items: center;
+    align-items: center;
+}
+
+li {
+    padding: 1%;
+}
+
+.carrinho {
+    text-align: left;
+    height: 70px;
 }
