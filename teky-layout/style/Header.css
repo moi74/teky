@@ -1,4 +1,9 @@
 .navbar__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -88,6 +93,7 @@
 }
 
 .header__categorias {
+    margin-top: 50px;
     padding: 1%;
     list-style-type: none;
     justify-content: space-between;
