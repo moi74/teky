@@ -1,0 +1,33 @@
+.carrosselMarcas {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.carrosselMarcas__texto {
+    text-align: center;
+    font-size: medium;
+}
+
+.carrosselMarcas__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    padding: 3%;
+    background-color: rgb(231, 231, 231);
+}
+
+.carrosselMarcas__card {
+    background-color: white;
+    align-items: center;
+    width: 17%;
+    padding: 2%;
+}
+
+.carrosselMarcas__imagem {
+    align-items: center;
+    width: 304px;
+    height: 120px;
+}
+
