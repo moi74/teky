@@ -1,0 +1,27 @@
+.carrosselCategorias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carrosselCategorias__texto {
+    text-align: center;
+    font-size: medium;
+}
+
+.carrosselCategorias__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    padding: 3%;
+    background-color: rgb(231, 231, 231);
+}
+
+.carrosselCategorias__card {
+    background-color: white;
+    align-items: center;
+    width: 18%;
+}
+
