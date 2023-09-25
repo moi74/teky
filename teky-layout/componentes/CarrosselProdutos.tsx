@@ -45,7 +45,7 @@ function CarrosselProdutos(props) {
                           </p>
                           <p className='carrosselProdutos__infos carrosselProdutos__infos--venda'>R${card.precoVenda}</p>
                           <p className='carrosselProdutos__infos carrosselProdutos__infos--preco'>R${card.precoOriginal}</p>
-                          <p className='carrosselProdutos__infos'>
+                          <p className={`carrosselProdutos__infos ${card.estoque === true ? 'disponivel' : 'indisponivel'}`}>
                             {card.estoque === true ? 'Em estoque' : 'Indisponível'}
                           </p>
                         </div>

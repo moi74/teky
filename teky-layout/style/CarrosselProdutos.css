@@ -73,3 +73,13 @@
     color: grey;
     text-decoration: line-through;
 }
+
+.disponivel {
+    color: green;
+    font-weight: bold;
+}
+
+.indisponivel {
+    color: red;
+    font-weight: bold;
+}

@@ -65,11 +65,12 @@
     border:solid 1px;
     border-radius:5px;
     height: 30px;
-    width: 550px;
+    width: 60%;
 }
 
-.buttonBusca {
+.busca__button {
     height: 100%;
+    width: 3%;
 }
 
 .categoriaSelect {
