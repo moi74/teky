@@ -29,7 +29,15 @@
 }
 
 .navbar__header__esquerda {
-    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 9%;
+}
+
+.navbar__header__menuButton {
+    all: unset;
+    cursor: pointer;
+    outline: revert;
 }
 
 .navbar__header__centro {

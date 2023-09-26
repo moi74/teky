@@ -1,12 +1,25 @@
 import '../style/Header.css';
-import '../style/Global.css'
+import '../style/Global.css';
+
+import Sidebar from './Sidebar.tsx'
+import { useState } from 'react';
 
 function Header() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen)
+    }
+
+    const closeSidebar = () => {
+        setIsSidebarOpen(false);
+      };
+
     return (
         <div className='navbar'>
             <div className="navbar__header">
                 <div className='navbar__header__esquerda'>
-                    <a href='#'><img src='./Menu.svg'></img></a>
+                    <button onClick={toggleSidebar} className='navbar__header__menuButton'><img src='./Menu.svg'></img></button>
                     <a href="#default">
                         <img src='./tekyWhite.svg' className='logo'></img>
                     </a>
@@ -74,6 +87,7 @@ function Header() {
                         <a className='header__categorias__item' href='#'>Rolamentos</a>
                     </li>
                 </ul>
+            <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
             </div>
         </div>
     );
