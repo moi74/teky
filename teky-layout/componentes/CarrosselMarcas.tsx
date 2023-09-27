@@ -17,7 +17,7 @@ function CarrosselMarcas() {
 
   return (
     <div>
-        <p className='carrosselMarcas__texto'><b>Marcas em destaque</b></p>
+        <h4 className='carrosselMarcas__texto'>Marcas em destaque</h4>
         <div className="carrosselMarcas">
         <Carousel
             showThumbs={false}

@@ -17,7 +17,7 @@ function CarrosselProdutos(props) {
 
   return (
     <div>
-        <p className='carrosselProdutos__titulo'><b>{props.titulo}</b></p>
+        <h4 className='carrosselProdutos__titulo'>{props.titulo}</h4>
         <div className="carrosselProdutos">
         <Carousel
             showThumbs={false}
@@ -37,7 +37,7 @@ function CarrosselProdutos(props) {
                           <img className="carrosselProdutos__imagem" src={card.imagemUrl} alt={card.nome} />
                         </div>
                         <div className='carrosselProdutos__tituloProduto'>
-                          <h3>{card.nome}</h3>
+                          <h4>{card.nome}</h4>
                         </div>
                         <div className='carrosselProdutos__dadosProduto'>
                           <p className='carrosselProdutos__infos carrosselProdutos__infos--fabricante'>
