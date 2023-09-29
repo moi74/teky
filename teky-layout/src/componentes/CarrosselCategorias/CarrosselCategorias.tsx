@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import MarcasData from '../data/MarcasData.tsx';
+import CategoriasData from '../../../data/CategoriasData.tsx';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import '../style/CarrosselMarcas.css';
+import './CarrosselCategorias.css';
 
-function CarrosselMarcas() {
+function CarrosselCategorias() {
   const [paginaAtual, setCurrentPage] = useState(0);
   const produtosPorPagina = 5;
-  const CardData = MarcasData;
+  const CardData = CategoriasData;
 
   const totalSlides = Math.ceil(CardData.length / produtosPorPagina);
 
@@ -17,8 +17,8 @@ function CarrosselMarcas() {
 
   return (
     <div>
-        <h4 className='carrosselMarcas__texto'>Marcas em destaque</h4>
-        <div className="carrosselMarcas">
+        <p className='carrosselCategorias__texto'><b>Categorias</b></p>
+        <div className="carrosselCategorias">
         <Carousel
             showThumbs={false}
             selectedItem={paginaAtual}
@@ -30,10 +30,10 @@ function CarrosselMarcas() {
             const cardsInThisSlide = CardData.slice(startCardIndex, endCardIndex);
 
             return (
-                <div key={index} className="carrosselMarcas__cards">
+                <div key={index} className="carrosselCategorias__cards">
                 {cardsInThisSlide.map((card) => (
-                    <div key={card.id} className="carrosselMarcas__card">
-                    <img className="carrosselMarcas__imagem" src={card.imagemUrl} alt={card.nome} />
+                    <div key={card.id} className="carrosselCategorias__card">
+                    <img className="carrosselCategorias__imagem" src={card.imagemUrl} alt={card.nome} />
                     </div>
                 ))}
                 </div>
@@ -45,4 +45,4 @@ function CarrosselMarcas() {
   );
 }
 
-export default CarrosselMarcas;
+export default CarrosselCategorias;

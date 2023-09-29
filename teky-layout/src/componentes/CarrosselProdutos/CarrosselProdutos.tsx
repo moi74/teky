@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import ProdutosData from '../data/ProdutosData';
+import ProdutosData from '../../../data/ProdutosData';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import '../style/CarrosselProdutos.css';
+import './CarrosselProdutos.css';
 
 function CarrosselProdutos(props) {
   const [paginaAtual, setCurrentPage] = useState(0);

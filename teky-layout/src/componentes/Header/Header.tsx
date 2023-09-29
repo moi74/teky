@@ -1,7 +1,7 @@
-import '../style/Header.css';
-import '../style/Global.css';
+import './Header.css';
+import '../Global.css';
 
-import Sidebar from './Sidebar.tsx'
+import Sidebar from '../Sidebar/Sidebar.tsx'
 import { useState } from 'react';
 
 function Header() {
