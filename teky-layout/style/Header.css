@@ -22,12 +22,6 @@
     padding: 0.5%;
 }
 
-.header__lista--categorias {
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-}
-
 .navbar__header__esquerda {
     display: flex;
     justify-content: space-between;
@@ -101,15 +95,43 @@
     align-items: center;
 }
 
+/* Style lista de categorias */
+
 .header__categorias {
-    margin-top: 50px;
-    padding: 1%;
+    text-align: center;
+    margin-top: 60px;
+    padding: 3%;
+    padding-top: 0;
+    padding-bottom: 0%;
+    list-style-type: none;
+}
+
+.header__lista--categorias {
+    display: flex;
     list-style-type: none;
     justify-content: space-between;
+    padding: 1%;
+}
+
+.header__categorias__icon {
+    max-width: 30px;
+    fill: grey;
+    transition: fill 0.3s;
+}
+
+.header__categorias__icon:hover {
+    fill: black;
 }
 
 .header__categorias__item {
+    display: block;
     padding: 1%;
+    color: grey;
+    font-weight: bold;
+}
+
+.header__categorias__item:hover {
+    color: black;
 }
 
 .carrinho {
