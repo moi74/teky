@@ -60,34 +60,60 @@
     text-decoration: underline;
 }
 
+/*  */
+
 .busca {
+    display: flex;
     align-items: center;
-    margin-left: 7%;
     background-color:#ffffff;
     border:solid 1px;
     border-radius:5px;
-    height: 30px;
-    width: 60%;
+    height: 40px;
+    width: 80%;
+}
+
+.busca__form {
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
 
 .busca__button {
-    height: 100%;
-    width: 3%;
+    height: 40px;
+    width: 15%;
+    border: none;
+    outline: none;
+    border-top-right-radius: .25em;
+    border-bottom-right-radius: .25em
+}
+
+.busca__button:hover {
+    fill: rgb(0, 108, 185);;
+}
+
+.search__icon {
+    height: 15px;
 }
 
 .categoriaSelect {
-    height: 30px;
+    height: 40px;
     width: auto;
     border: 0;
+    font-size: medium;
+    border-top-right-radius: .25em;
+    border-bottom-right-radius: .25em
 }
 
 .pesquisa {
     border: 0;
-    height: 100%;
-    width: 90%;
+    height: 40px;
+    width: 85%;
     box-shadow: 0 0 0 0;
     outline: 0;
+    font-size: medium;
 }
+
+
 
 .header-direita {
     display: flex;
