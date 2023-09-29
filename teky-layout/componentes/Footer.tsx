@@ -8,8 +8,8 @@ function Footer() {
                 <center>
                     <p className='cadastro footer__texto'><b>Cadastre-se e receba ofertas exclusivas</b></p>
                     <form className='dados_cadastro'>
-                        <input type='text' placeholder='Digite seu nome'></input>
-                        <input type='text' placeholder='Digite seu email'></input>
+                        <input className='dados__cadastro__input' type='text' placeholder='Digite seu nome'></input>
+                        <input className='dados__cadastro__input' type='text' placeholder='Digite seu email'></input>
                         <button type='submit' className='footer__cadastro__button'> Enviar </button>
                     </form>
                 </center>
