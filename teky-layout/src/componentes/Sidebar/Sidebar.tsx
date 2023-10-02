@@ -11,14 +11,14 @@ function Sidebar({ isOpen, onClose }: SidebarProps) {
     return (
         <>
             <div className={`sidebar ${sidebarClass}`}>
-                <ul className='sidebar__listaOrdenada'>
+                <ul className='sidebar__OrderedList'>
                     <li><a href='#'>Conta</a></li>
                     <li><a href='#'>Pedidos</a></li>
                 </ul>
-                <hr className='sidebar__linhasDivisoria' />
+                <hr className='sidebar__line' />
 
                 <h3>Comprar por Categorias</h3>
-                <ul className='sidebar__listaOrdenada'>
+                <ul className='sidebar__OrderedList'>
                     <li>
                         <a className='' href='#'>Abrasivos</a>
                     </li>

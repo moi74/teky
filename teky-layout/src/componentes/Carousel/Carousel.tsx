@@ -1,10 +1,10 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Carousel} from 'react-responsive-carousel';
-import './Carrossel.css'
+import './Carousel.css'
 
-function Carrossel(){
+function CarouselTop(){
         return (
-            <div className='Carrossel'>
+            <div className='Carousel__page'>
                 <Carousel autoPlay interval={3000} infiniteLoop showThumbs={false}>
                     <div>
                         <img src="./carrossel1.png"></img>
@@ -20,4 +20,4 @@ function Carrossel(){
         );
 }
 
-export default Carrossel;
+export default CarouselTop;

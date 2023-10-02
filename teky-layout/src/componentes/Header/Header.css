@@ -13,7 +13,7 @@
     color: white;
 }
 
-.header__lista {
+.header__list {
     display: flex;
     list-style-type: none;
     justify-items: center;
@@ -22,7 +22,7 @@
     padding: 0.5%;
 }
 
-.navbar__header__esquerda {
+.navbar__header__left {
     display: flex;
     justify-content: space-between;
     width: 9%;
@@ -34,7 +34,7 @@
     outline: revert;
 }
 
-.navbar__header__centro {
+.navbar__header__center {
     display: flex;
     width: 50%;
     align-items: center;
@@ -42,7 +42,7 @@
 }
 
 
-.navbar__header__direita {
+.navbar__header__right {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,7 +62,7 @@
 
 /*  */
 
-.busca {
+.search {
     display: flex;
     align-items: center;
     background-color:#ffffff;
@@ -72,13 +72,13 @@
     width: 80%;
 }
 
-.busca__form {
+.search__form {
     display: flex;
     width: 100%;
     align-items: center;
 }
 
-.busca__button {
+.search__button {
     height: 40px;
     width: 15%;
     border: none;
@@ -95,7 +95,7 @@
     height: 15px;
 }
 
-.categoriaSelect {
+.categoriesSelect {
     height: 40px;
     width: auto;
     border: 0;
@@ -104,7 +104,7 @@
     border-bottom-right-radius: .25em
 }
 
-.pesquisa {
+.search__input {
     border: 0;
     height: 40px;
     width: 85%;
@@ -123,7 +123,7 @@
 
 /* Style lista de categorias */
 
-.header__categorias {
+.header__categories {
     text-align: center;
     margin-top: 60px;
     padding: 3%;
@@ -132,35 +132,35 @@
     list-style-type: none;
 }
 
-.header__lista--categorias {
+.header__list--categories {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     padding: 1%;
 }
 
-.header__categorias__icon {
+.header__categories__icon {
     max-width: 30px;
     fill: grey;
     transition: fill 0.3s;
 }
 
-.header__categorias__icon:hover {
+.header__categories__icon:hover {
     fill: black;
 }
 
-.header__categorias__item {
+.header__categories__item {
     display: block;
     padding: 1%;
     color: grey;
     font-weight: bold;
 }
 
-.header__categorias__item:hover {
+.header__categories__item:hover {
     color: black;
 }
 
-.carrinho {
+.cart {
     text-align: left;
     height: 70px;
 }
