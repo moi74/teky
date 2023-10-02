@@ -1,16 +1,16 @@
-.carrosselCategorias {
+.carouselCategories {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.carrosselCategorias__texto {
+.carouselCategories__text {
     text-align: center;
     font-size: medium;
 }
 
-.carrosselCategorias__cards {
+.carouselCategories__cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
     background-color: rgb(231, 231, 231);
 }
 
-.carrosselCategorias__card {
+.carouselCategories__card {
     background-color: white;
     align-items: center;
     width: 18%;

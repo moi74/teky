@@ -1,15 +1,15 @@
-.carrosselProdutos {
+.carouselProducts {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.carrosselProdutos__titulo {
+.carouselProducts__title {
     text-align: center;
     font-size: medium;
 }
 
-.carrosselProdutos__cards {
+.carouselProducts__cards {
     display: flex;
     justify-content: space-between;
     margin: 2%;
@@ -19,7 +19,7 @@
 
 /* Card individual */
 
-.carrosselProdutos__card {
+.carouselProducts__card {
     width: 23%;
     height: 500px;
     border-style: solid;
@@ -30,7 +30,7 @@
     padding: 1%;
 }
 
-.carrosselProdutos__card__localImagem {
+.carouselProducts__card__localImage {
     width: 100%;
     height: 60%;
     overflow: hidden;
@@ -39,55 +39,55 @@
     justify-content: center;
 }
 
-.carrosselProdutos__imagem {
+.carouselProducts__image {
     max-height: 100%;
     height: auto;
     width: auto;
     object-fit: contain;
 }
 
-.carrosselProdutos__tituloProduto {
+.carouselProducts__productTitle {
     height: 15%;
 }
 
-.carrosselProdutos__dadosProduto {
+.carouselProducts__productsData {
     flex: 1; /* Ocupa todo o espaço disponível na div */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.carrosselProdutos__infos {
+.carouselProducts__infos {
     align-items:last baseline;
     text-align: left;
     margin: 2px;
 }
 
-.carrosselProdutos__linkFabricante {
+.carouselProducts__manufacturerLink {
     color: blue;
 }
 
-.carrosselProdutos__linkFabricante:hover {
+.carouselProducts__manufacturerLink:hover {
     text-decoration: underline;
 }
 
-.carrosselProdutos__infos--venda {
+.carouselProducts__infos--sell {
     font-weight: bold;
     font-size: medium;
     color: rgb(175, 12, 12);
 }
 
-.carrosselProdutos__infos--preco {
+.carouselProducts__infos--price {
     color: grey;
     text-decoration: line-through;
 }
 
-.disponivel {
+.available {
     color: green;
     font-weight: bold;
 }
 
-.indisponivel {
+.unavailable {
     color: red;
     font-weight: bold;
 }

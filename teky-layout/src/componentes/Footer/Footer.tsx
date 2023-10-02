@@ -3,17 +3,17 @@ import './Footer.css';
 function Footer() {
     return (
         <div className='footer'>
-                <div className='footer__cadastro'>
+                <div className='footer__register'>
                 <center>
-                    <p className='cadastro footer__texto'><b>Cadastre-se e receba ofertas exclusivas</b></p>
-                    <form className='dados_cadastro'>
-                        <input className='dados__cadastro__input' type='text' placeholder='Digite seu nome'></input>
-                        <input className='dados__cadastro__input' type='text' placeholder='Digite seu email'></input>
-                        <button type='submit' className='footer__cadastro__button'> Enviar </button>
+                    <p className='register footer__text'><b>Cadastre-se e receba ofertas exclusivas</b></p>
+                    <form className='register__data'>
+                        <input className='register__data__input' type='text' placeholder='Digite seu nome'></input>
+                        <input className='register__data__input' type='text' placeholder='Digite seu email'></input>
+                        <button type='submit' className='register__data__button'> Enviar </button>
                     </form>
                 </center>
             </div>
-            <div className='footer__superior'>
+            <div className='footer__higher'>
                 <a href='#'><img src='./logo_principal.svg' className='img_logo'></img></a>
                 <div className='div_content'>
                     <strong>Redes Sociais</strong>
@@ -46,10 +46,10 @@ function Footer() {
                     <strong>Site Seguro</strong>
                 </div>
             </div>
-            <div className='footer__inferior'>
-                <p className='footer__texto'>Teky Intermediação de Negócios em Suprimentos Empresarias LTDA | 22.193.309/0001-88</p>
-                <p className='footer__texto'>Av. Voluntários da Pátria, 2035, sala D - Floresta, Porto Alegre - Rio Grande do Sul, 90230-011</p>
-                <p className='footer__texto'>Formas de Pagamento: Cartão de crédito, Boleto e Pix</p>
+            <div className='footer__bottom'>
+                <p className='footer__text'>Teky Intermediação de Negócios em Suprimentos Empresarias LTDA | 22.193.309/0001-88</p>
+                <p className='footer__text'>Av. Voluntários da Pátria, 2035, sala D - Floresta, Porto Alegre - Rio Grande do Sul, 90230-011</p>
+                <p className='footer__text'>Formas de Pagamento: Cartão de crédito, Boleto e Pix</p>
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import { MarcasInfo } from "../types/MarcasInfo.tsx";
 
-const MarcasData: MarcasInfo[] = [
+const BrandsData: MarcasInfo[] = [
     {id: 1, nome: '3M', imagemUrl: './marcas/3m.svg'},
     {id: 2, nome: 'ABB', imagemUrl: './marcas/abb.svg'},
     {id: 3, nome: 'Amanco', imagemUrl: './marcas/amanco.svg'},
@@ -13,4 +13,4 @@ const MarcasData: MarcasInfo[] = [
     {id: 10, nome: 'Legrand', imagemUrl: './marcas/legrand.svg'},
 ]
 
-export default MarcasData;
+export default BrandsData;

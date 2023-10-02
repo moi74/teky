@@ -1,15 +1,15 @@
-.carrosselMarcas {
+.carouselBrands {
     display: flex;
     align-items: center;
     height: 300px;
 }
 
-.carrosselMarcas__texto {
+.carouselBrands__text {
     text-align: center;
     font-size: medium;
 }
 
-.carrosselMarcas__cards {
+.carouselBrands__cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,14 +18,14 @@
     background-color: rgb(231, 231, 231);
 }
 
-.carrosselMarcas__card {
+.carouselBrands__card {
     background-color: white;
     align-items: center;
     width: 17%;
     padding: 2%;
 }
 
-.carrosselMarcas__imagem {
+.carouselBrands__image {
     align-items: center;
     width: 304px;
     height: 120px;
