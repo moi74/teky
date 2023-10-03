@@ -58,41 +58,95 @@ function Header() {
             <div className='header__categories'>
                 <ul className='header__list--categories'>
                     <li>
-                        <a className='header__categories__item' href='#'>Abrasivos</a>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Abrasivos</span>
+                        </a>
                     </li>
                     <li>
-                        <a className='header__categories__item' href='#'>Correias e Mangueiras</a>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Correias e Mangueiras</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Corte e Usinagem</span></a>
                         </li>
                     <li>
-                        <a className='header__categories__item' href='#'>Corte e Usinagem</a>
-                        </li>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Elétrica e Telecom</span>
+                        </a>
+                    </li>
                     <li>
-                        <a className='header__categories__item' href='#'>Elétrica e Telecom</a>
-                        </li>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>EPIs e EPCs</span>
+                        </a>
+                    </li>
                     <li>
-                        <a className='header__categories__item' href='#'>EPIs e EPCs</a>
-                        </li>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Ferramentas</span>
+                        </a>
+                    </li>
                     <li>
-                        <a className='header__categories__item' href='#'>Ferramentas</a>
-                        </li>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Ficação e Vedação</span>
+                        </a>
+                    </li>
                     <li>
-                        <a className='header__categories__item' href='#'>Ficação e Vedação</a>
-                        </li>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Hidráulicos e Pneumáticos</span>
+                        </a>
+                    </li>
                     <li>
-                        <a className='header__categories__item' href='#'>Hidráulicos e Pneumáticos</a>
-                        </li>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Motores e Bombas</span>
+                        </a>
+                    </li>
                     <li>
-                        <a className='header__categories__item' href='#'>Motores e Bombas</a>
-                        </li>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Óleos, Fluídos e Solventes</span>
+                        </a>
+                    </li>
                     <li>
-                        <a className='header__categories__item' href='#'>Óleos, Fluídos e Solventes</a>
-                        </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>Outros </a>
+                        <a className='header__categories__item' href='#'>
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+                            </svg>
+                            <span>Outros</span> 
+                        </a>
                     </li>
                     <li>
                         <a className='header__categories__item' href='#'> 
-                            <svg className='header__categories__icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                 <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
                             </svg>
                             <span>Rolamentos</span>
