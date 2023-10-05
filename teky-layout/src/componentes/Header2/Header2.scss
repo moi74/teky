@@ -1,0 +1,154 @@
+.header {
+    height: 64px;
+    background-color: #006cb9;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr 1fr; 
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+
+        &__bars {
+            height: 25px;
+            width: 25px;
+            color: white;
+            padding-right: 15px;
+        }
+
+        svg {
+            height: 40px;
+            fill: white;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__form {
+            width: 80%;
+            display: flex;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            align-items: center;
+
+            > select {
+                height: 100%;
+                font-size: .8em;
+                cursor: pointer;
+                background: transparent;
+                padding-left: 5px;
+                padding-right: 25px;
+                border: none;
+                -webkit-appearance: none;
+                appearance: none;
+                outline: none;
+            }
+
+            > input {
+                width: 100%;
+                height: 80%;
+                border: none;
+                outline: none;
+                font-size: medium;
+            }
+
+            > button {
+                height: 100%;
+                width: 10%;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                border-top-right-radius: .25em;
+                border-bottom-right-radius: .25em
+            }
+
+            > button:hover {
+                color: blue;
+            }
+        }
+
+        > .header__login {
+            padding-left: 5px;   
+        }
+    }
+
+    &__teky {
+        max-height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > ul {
+            list-style-type: none;
+            display: flex;
+        }
+    }
+
+    &__shopping {
+        max-height: 64px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 20px;
+        gap: 20px;
+
+        &__Icon {
+            box-sizing: border-box;
+            height: 25px;
+        }
+
+        > .account {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "left right" "search search";
+        height: 120px;
+        justify-content: start;
+
+        &__menu {
+            grid-area: left;
+        }
+
+        &__shopping {
+            grid-area: right;
+
+            &--text {
+                display: none;
+            }
+
+            > .account {
+                display: block;
+
+                > svg {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+
+        &__search {
+            width: 100%;
+            grid-area: search;
+
+            &__form {
+                width: 97%;
+            }
+        }
+
+        &__teky, &__login {
+            display: none;
+        }
+    }
+
+}
