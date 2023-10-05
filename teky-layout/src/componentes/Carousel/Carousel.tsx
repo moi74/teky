@@ -1,11 +1,11 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import {Carousel} from 'react-responsive-carousel';
-import './Carousel.css'
+import { Carousel } from 'react-responsive-carousel';
+import './Carousel.scss'
 
 function CarouselTop(){
         return (
-            <div className='Carousel__page'>
-                <Carousel autoPlay interval={3000} infiniteLoop showThumbs={false}>
+            <div className='carousel__page'>
+                <Carousel autoPlay interval={3000} infiniteLoop showThumbs={false} className='carousel__page__carousel'>
                     <div>
                         <img src="./carrossel1.png"></img>
                     </div>

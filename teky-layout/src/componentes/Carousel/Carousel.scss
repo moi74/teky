@@ -1,0 +1,14 @@
+.carousel {
+
+    &__page {
+        padding: 2%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .carousel {
+        &__page {
+            padding: 0;
+        }
+    }
+}
