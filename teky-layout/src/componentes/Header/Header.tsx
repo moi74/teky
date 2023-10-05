@@ -1,163 +1,72 @@
-import './Header.css';
-import '../Global.css';
-
-import Sidebar from '../Sidebar/Sidebar.tsx'
+import  './Header.scss';
 import { useState } from 'react';
+import Sidebar from "../Sidebar/Sidebar";
 
-function Header() {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faMagnifyingGlass, faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+
+
+function Header2() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen)
+        setIsSidebarOpen(!isSidebarOpen);
     }
 
     const closeSidebar = () => {
         setIsSidebarOpen(false);
-      };
+    }
 
-    return (
-        <div className='navbar'>
-            <div className="navbar__header">
-                <div className='navbar__header__left'>
-                    <button onClick={toggleSidebar} className='navbar__header__menuButton'><img src='./Menu.svg'></img></button>
-                    <a href="#default">
-                        <img src='./tekyWhite.svg' className='logo'></img>
-                    </a>
+    return <>
+        <div className='header'>
+            <div className='header__menu'>
+                <button className='imageButton' onClick={toggleSidebar}>
+                    <FontAwesomeIcon className='header__menu__bars' icon={faBars} />
+                </button>
+                <a href='#'>
+                    <svg id="Logo_Padrao_Mono" fill='current' data-name="Logo Padrao Mono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295 131.669">
+                        <g id="Grupo_2" data-name="Grupo 2" transform="translate(237.655 23.663)">
+                            <path id="Caminho_5" data-name="Caminho 5" d="M268.969,78.1a11.263,11.263,0,0,1,4.289-8.846,29.67,29.67,0,0,0-6.212-10.972,11.282,11.282,0,0,1-15.531-9.175,29.7,29.7,0,0,0-13.254,0,11.284,11.284,0,0,1-15.533,9.179,29.638,29.638,0,0,0-6.217,10.966,11.27,11.27,0,0,1,.027,17.685,29.681,29.681,0,0,0,6.191,10.91,11.286,11.286,0,0,1,15.532,9.175,29.645,29.645,0,0,0,13.254,0,11.286,11.286,0,0,1,15.532-9.179,29.67,29.67,0,0,0,6.2-10.9A11.262,11.262,0,0,1,268.969,78.1ZM246.4,90.7V84.187a6.109,6.109,0,0,1-3.03,0V90.7A12.726,12.726,0,0,1,232.254,79.58h6.512a6.106,6.106,0,0,1,0-3.03h-6.512a12.726,12.726,0,0,1,11.119-11.119v6.512a6.108,6.108,0,0,1,3.03,0V65.431A12.726,12.726,0,0,1,257.522,76.55H251.01a6.108,6.108,0,0,1,0,3.03h6.512A12.726,12.726,0,0,1,246.4,90.7Z" transform="translate(-216.511 -48.358)" fill="#ffffff"/>
+                        </g>
+                        <path id="Caminho_6" data-name="Caminho 6" d="M141.732,78.857l15.344-30.689h19.917L157.385,87.043l22.225,45.925H159.769L141.732,95.09Z" transform="translate(0.759 -24.747)" fill="#ffffff"/>
+                        <path id="Caminho_7" data-name="Caminho 7" d="M206.3,48.189,195.482,88.772,184.66,48.189h-6.313l-8.822,17.645,16.037,60.139-8.117,30.437h19.841L226.144,48.189Z" transform="translate(8.335 -24.741)" fill="#ffffff"/>
+                        <path id="Caminho_8" data-name="Caminho 8" d="M71.149,137.985V119.948H58.623v-50.5H71.149V53.212H58.623V29.764H38.861V53.212h-9.1V69.445h9.1v58.047c0,7.053,3.441,10.493,10.664,10.493Zm48.8-50.4H103.715V69.445h16.233Zm52.307-57.823h-19.84V137.985h19.84ZM139.8,83.874V63.7c0-7.053-3.613-10.493-10.836-10.493H94.711c-7.4,0-10.838,3.44-10.838,10.493v63.788c0,7.053,3.441,10.493,10.838,10.493H128.96c7.223,0,10.836-3.44,10.836-10.493V114.537H124.457l-2.706,5.411H103.715V101.833l25.588.071c7.053,0,10.493-3.613,10.493-10.837Zm-19.848,3.713H103.715V69.445h16.233ZM139.8,83.874V63.7c0-7.053-3.613-10.493-10.836-10.493H94.711c-7.4,0-10.838,3.44-10.838,10.493v63.788c0,7.053,3.441,10.493,10.838,10.493H128.96c7.223,0,10.836-3.44,10.836-10.493V114.537H124.457l-2.706,5.411H103.715V101.833l25.588.071c7.053,0,10.493-3.613,10.493-10.837Z" transform="translate(-29.764 -29.764)" fill="#ffffff"/>
+                    </svg>
+                </a>
+            </div>
+            <div className='header__search'>
+                <div className='header__search__form'>
+                    <select></select>
+                    <input type='text' placeholder='Pesquisar'></input>
+                    <button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
                 </div>
-                <div className='navbar__header__center'>
-                    <div className='search'>
-                        <form className='search__form'>
-                            <select className='categoriesSelect'>
-                                <option></option>
-                                <option>abrasivo</option>
-                            </select>
-                            <input type='text' className='search__input' placeholder='Pesquisar'></input>
-                            <button type='submit' className='search__button'>
-                                <svg className='search__icon' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                    <div className='navbar__login'>
-                        <p>Olá <br />
-                        <a href='/' className='navbar__link'>Faça seu login</a><br />
-                        </p>
-                    </div>
-                </div>
-                <div className="navbar__header__right">
-                    <ul className='header__list'>
-                        <li><a className="navbar__link" href="#home">Quem somos</a></li><span> | </span>
-                        <li><a className="navbar__link" href="#contact">Teky Pro</a></li><span> | </span>
-                        <li><a className="navbar__link" href="#about">Venda na Teky</a></li><span> | </span>
-                        <li><a className="navbar__link" href='#'>Pedidos</a></li>
-                        <li><a><img src='./carrinho.png' className='cart'></img></a></li>
-                    </ul>
+                <div className='header__login'>
+                    <p>Olá<br />
+                    <a>Faça seu login</a></p>
                 </div>
             </div>
-            <div className='header__categories'>
-                <ul className='header__list--categories'>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Abrasivos</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Correias e Mangueiras</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Corte e Usinagem</span></a>
-                        </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Elétrica e Telecom</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>EPIs e EPCs</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Ferramentas</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Ficação e Vedação</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Hidráulicos e Pneumáticos</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Motores e Bombas</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Óleos, Fluídos e Solventes</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'>
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Outros</span> 
-                        </a>
-                    </li>
-                    <li>
-                        <a className='header__categories__item' href='#'> 
-                            <svg className='header__categories__icon' fill='current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path id="bolt-solid" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
-                            </svg>
-                            <span>Rolamentos</span>
-                        </a>
-                    </li>
+            <div className='header__teky'>
+                <ul>
+                    <li><a>Quem somos</a></li>
+                    <li>|</li>
+                    <li><a>Teky Pro</a></li>
+                    <li>|</li>
+                    <li><a>Venda na Teky</a></li>
                 </ul>
             </div>
-            <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+            <div className='header__shopping'>
+                <a className='header__shopping--text'>Pedidos</a>
+                <a className='account'>
+                    <FontAwesomeIcon icon={faUserCircle} className='header__shopping__Icon' />
+                </a>
+                <a href='#'>
+                    <FontAwesomeIcon icon={faShoppingCart} className='header__shopping__Icon' />
+                </a>
+            </div>
         </div>
-    );
-  }
-  
-  export default Header;
-  
+
+        <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+    </>
+}
+
+export default Header2;
