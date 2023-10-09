@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import ProdutosData from '../../../data/ProdutosData';
+import ProdutosData from '../../../data/ProductsData';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './CarouselProducts.css';
 
